@@ -1,0 +1,11 @@
+{
+  "appId": "com.wandx.app",
+  "appName": "wandx",
+  "bundledWebRuntime": false,
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
