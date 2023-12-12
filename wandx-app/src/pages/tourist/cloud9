@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Awesome Capacitor App</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
+    ></script>
+
+    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta name="theme-color" content="#31d53d" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark fixed-top customNav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">WandX</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header customNav">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">WandX</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pages/favorites.html"
+                  >Favorites</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Theme</a>
+              </li>
+            </ul>
+          </div>
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Tagline -->
+    <div class="container p-5">
+      <div class="row">
+        <h6 class="text-center mt-3">
+          Your Ultimate Siargao Adventure Awaits!
+        </h6>
+      </div>
+    </div>
+    <!-- End of Tagline -->
+
+    <!-- List of Tourist Destination -->
+    <section>
+      <div class="halie-container">
+        <h2>Tourist Spots</h2>
+        <!-- <span> Tourist Spots</span> -->
+        <div class="row">
+          <div class="col">
+            <div id="halie-box" class="halie-image">
+              <img src="../assets/imgs/1.jpg" alt="Image" />
+              <div class="halie-text">
+                <a href="../pages/tourist/cloud9"
+                  ><b>Cloud 9 Surfing Area </b></a
+                >
+                <div class="halie-text">
+                  <small class="float-start"
+                    >Siargao Island, General Luna, Surigao del Norte </small
+                  ><br />
+                  <small class="float-start">Open 24 hours</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="halie-box" class="halie-image">
+              <img src="../assets/imgs/2.jpg" alt="Image" />
+              <div class="halie-text">
+                <a href="../pages/tourist/cloud9"><b>Sohoton Cove </b></a>
+                <div class="halie-text">
+                  <small class="float-start"
+                    >Socorro, Surigao del Norte, Philippines </small
+                  ><br />
+                  <small class="float-start">7:00 AM - 4:00 PM</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="halie-box" class="halie-image">
+              <img src="../assets/imgs/3.jpg" alt="Image" />
+              <div class="halie-text">
+                <a href="../pages/tourist/cloud9"
+                  ><b>Magpupungko Rock Pools </b></a
+                >
+                <div class="halie-text">
+                  <small class="float-start">Pilar </small><br />
+                  <small class="float-start">Open 24 hours</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="halie-box" class="halie-image">
+              <img src="../assets/imgs/4.jpg" alt="Image" />
+              <div class="halie-text">
+                <a href="../pages/tourist/cloud9"><b>Sugba Lagoon </b></a>
+                <div class="halie-text">
+                  <small class="float-start"
+                    >Siargao Island, General Luna, Surigao del Norte </small
+                  ><br />
+                  <small class="float-start">7:00 AM - 5:00 PM</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="halie-box" class="halie-image">
+              <img src="../assets/imgs/5.jpg" alt="Image" />
+              <div class="halie-text">
+                <a href="../pages/tourist/cloud9"><b>Guyam Island </b></a>
+                <div class="halie-text">
+                  <small class="float-start">General Luna </small><br />
+                  <small class="float-start">Open 24 hours</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="halie-box" class="halie-image">
+              <img src="../assets/imgs/6.jpg" alt="Image" />
+              <div class="halie-text">
+                <a href="../pages/tourist/cloud9"><b>Daku Island </b></a>
+                <div class="halie-text">
+                  <small class="float-start">General Luna</small><br />
+                  <small class="float-start">Open 24 hours</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="halie-box" class="halie-image">
+              <img src="../assets/imgs/7.jpg" alt="Image" />
+              <div class="halie-text">
+                <a href="../pages/tourist/cloud9"><b>Taktak Falls</b></a>
+                <div class="halie-text">
+                  <small class="float-start"
+                    >Santa Monica, Surigao del Norte </small
+                  ><br />
+                  <small class="float-start">8:00 AM - 5:00 PM</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="halie-box" class="halie-image">
+              <img src="../assets/imgs/8.jpg" alt="Image" />
+              <div class="halie-text">
+                <a href="../pages/tourist/cloud9"
+                  ><b>Maasin Bridge River Swing </b></a
+                >
+                <div class="halie-text">
+                  <small class="float-start"
+                    >Siargao Circumferential Rd, Dapa, Surigao del Norte </small
+                  ><br />
+                  <small class="float-start">7:30 AM–6:00PM</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="halie-box" class="halie-image">
+              <img src="../assets/imgs/9.jpg" alt="Image" />
+              <div class="halie-text">
+                <a href="../pages/tourist/cloud9"><b>Naked Island </b></a>
+                <div class="halie-text">
+                  <small class="float-start"
+                    >Siargao Island, Union Rd, Dapa, Surigao del Norte </small
+                  ><br />
+                  <small class="float-start">Open 24 hours </small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="halie-box" class="halie-image">
+              <img src="../assets/imgs/10.jpg" alt="Image" />
+              <div class="halie-text">
+                <a href="../pages/tourist/cloud9"
+                  ><b>Coconut Tree Viewpoint</b></a
+                >
+                <div class="halie-text">
+                  <small class="float-start">
+                    Siargao Circumferential Rd, Dapa, Surigao del Norte </small
+                  ><br />
+                  <small class="float-start">7:30 AM–8:50 PM</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Tourist Destination -->
+
+    <!-- Footer -->
+    <footer class="navbar navbar-dark fixed-bottom customNav">
+      <div class="col-lg-sm icon">
+        <a class="footer-link active" aria-current="page" href="../index.html"
+          ><img src="../assets/icon/home.svg" alt="SVG Image"
+        /></a>
+      </div>
+      <div class="col-lg-sm icon">
+        <a
+          class="footer-link active"
+          aria-current="page"
+          href="../pages/list.html"
+          ><img src="../assets/icon/card-list.svg" alt="SVG Image"
+        /></a>
+      </div>
+      <div class="col-lg-sm icon">
+        <a
+          class="footer-link active"
+          aria-current="page"
+          href="../pages/favorites.html"
+          ><img src="../assets/icon/search.svg" alt="SVG Image"
+        /></a>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

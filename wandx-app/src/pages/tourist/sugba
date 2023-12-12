@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Awesome Capacitor App</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"
+    ></script>
+
+    <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.ico" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta name="theme-color" content="#31d53d" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark fixed-top customNav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">WandX</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header customNav">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">WandX</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./pages/favorites.html"
+                  >Favorites</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Theme</a>
+              </li>
+            </ul>
+          </div>
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Tagline -->
+    <div class="container p-5">
+      <div class="row">
+        <h6 class="text-center mt-3">
+          Your Ultimate Siargao Adventure Awaits!
+        </h6>
+      </div>
+    </div>
+    <!-- End of Tagline -->
+
+    <!-- About Siargao -->
+    <section id="about" class="about">
+      <div class="content">
+        <div class="content-container mt-5">
+          <h1 class="text-center">Siargao Island</h1>
+          <img src="assets/imgs/siargao.jpg" />
+          <h2 class="mt-4 mb-0">Siargao</h2>
+          <hr />
+          <p>
+            Siargao Island is a popular destination in the Philippines known for
+            its pristine beaches, surfing spots, and natural beauty. It is
+            located in the northeastern part of Mindanao, the second-largest
+            island in the Philippines and part of the province of Surigao del
+            Norte.
+          </p>
+          <p>
+            Siargao's combination of world-class surfing, stunning landscapes,
+            and a relaxed atmosphere makes it a popular destination for both
+            adventure seekers and those looking for a tranquil tropical getaway.
+          </p>
+          <hr />
+        </div>
+      </div>
+      <!-- FAQs -->
+      <div class="content">
+        <div class="content-container mt-5">
+          <h2><b>Frequently Asked Questions</b></h2>
+
+          <div class="faq-container">
+            <div class="question-box" onclick="toggleAnswer('answer1')">
+              <div class="question">Q1: How to get to Siargao?</div>
+              <div class="answer" id="answer1">
+                A: To reach Siargao, book a domestic flight to Sayak Airport
+                from Cebu. If you prefer a scenic route, you can optionally take
+                a ferry from Surigao City. Once you arrive, make arrangements
+                for local transportation to your accommodation.
+              </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer('answer2')">
+              <div class="question">
+                Q2: When is the best time to go to Siargao?
+              </div>
+              <div class="answer" id="answer2">
+                A: It depends on what you’re looking for! September is by far
+                the busiest month. The national & international surfing
+                competitions and the town fiesta are all in September. If you’re
+                looking for epic surf, the waves are best from September to
+                November. If you’re looking for uncrowded surf, come from
+                December to March. It’s uncrowded because it’s raining. A lot.
+                If you want to learn how to surf, come anytime. If you have no
+                idea why everyone keeps talking about surfing, then April to
+                October are perfect for beach all day and party all night.
+              </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer('answer3')">
+              <div class="question">
+                Q3: What are the must-do activities in Siargao?
+              </div>
+              <div class="answer" id="answer3">
+                A: In Siargao, you must surf at Cloud 9, go island hopping to
+                Naked Island, Guyam Island, and Daku Island, explore Sugba
+                Lagoon, visit the unique Magpupungko Rock Pools, and enjoy the
+                vibrant nightlife in General Luna.
+              </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer('answer4')">
+              <div class="question">Q4: Where to stay in Siargao?</div>
+              <div class="answer" id="answer4">
+                A: Popular areas to stay in Siargao include General Luna, Cloud
+                9, and nearby villages like Pacifico and Dapa. These areas offer
+                a range of accommodations, from hostels to luxury resorts, to
+                suit different budgets and preferences.
+              </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer('answer5')">
+              <div class="question">
+                Q5: How much does it cost to travel to Siargao?
+              </div>
+              <div class="answer" id="answer5">
+                A: A budget traveler in Siargao might spend around 1,500 to
+                2,500 Philippine Pesos per day, while a mid-range traveler could
+                budget for 2,500 to 5,000 Philippine Pesos per day. For luxury
+                travelers, the daily expenses could exceed 5,000 Philippine
+                Pesos. Domestic flights typically range from 7,500 to 16,000
+                Philippine Pesos round trip, depending on your departure
+                location and booking timing.
+              </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer('answer6')">
+              <div class="question">Q6: What is the currency in Siargao?</div>
+              <div class="answer" id="answer6">
+                A: The currency used in Siargao, Philippines, is the Philippine
+                Peso (PHP).
+              </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer('answer7')">
+              <div class="question">Q7: Is it safe to travel to Siargao?</div>
+              <div class="answer" id="answer7">
+                A: Siargao is generally safe for travelers. However, exercise
+                common travel precautions, such as securing belongings and being
+                mindful of the weather and sea conditions. Stay updated on any
+                local advisories and health recommendations.
+              </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer('answer8')">
+              <div class="question">
+                Q8: What are the visa requirements for Siargao?
+              </div>
+              <div class="answer" id="answer8">
+                A: Most tourists can enter the Philippines without a visa for 30
+                days. If needed, you can extend your stay. Check the latest visa
+                rules and ensure your passport is valid for at least six months
+                beyond your intended departure date.
+              </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer('answer9')">
+              <div class="question">Q9: How can I get around in Siargao?</div>
+              <div class="answer" id="answer9">
+                A: You can get around Siargao by using tricycles, habal-habal
+                (motorcycle taxis), rented scooters or bicycles, and vans or
+                private vehicles.
+              </div>
+            </div>
+
+            <div class="question-box" onclick="toggleAnswer('answer10')">
+              <div class="question">
+                Q10: What is the weather like in Siargao?
+              </div>
+              <div class="answer" id="answer10">
+                A: The weather is warm and temperate year round. It gets up to
+                low 30s celsius/90s fahrenheit in the summer. That, combined
+                with the humidity and strong sun, can make it quite hot. Rainy
+                season is from November to February. The temperature drops a few
+                degrees during rainy season. The water is warm enough to swim in
+                year round.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of FAQs-->
+    </section>
+    <!-- End of About Siargao -->
+
+    <!-- Footer -->
+    <footer class="navbar navbar-dark fixed-bottom customNav">
+      <div class="col-lg-sm icon">
+        <a class="footer-link active" aria-current="page" href=""
+          ><img src="assets/icon/home.svg" alt="SVG Image"
+        /></a>
+      </div>
+      <div class="col-lg-sm icon">
+        <a class="footer-link active" aria-current="page" href="pages/list.html"
+          ><img src="assets/icon/card-list.svg" alt="SVG Image"
+        /></a>
+      </div>
+      <div class="col-lg-sm icon">
+        <a
+          class="footer-link active"
+          aria-current="page"
+          href="pages/favorites.html"
+          ><img src="assets/icon/search.svg" alt="SVG Image"
+        /></a>
+      </div>
+    </footer>
+
+    <script>
+      function toggleAnswer(answerId) {
+        var answer = document.getElementById(answerId);
+        if (answer.style.display === "block") {
+          answer.style.display = "none";
+        } else {
+          answer.style.display = "block";
+        }
+      }
+    </script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
