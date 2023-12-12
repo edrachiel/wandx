@@ -3,7 +3,10 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+<<<<<<< HEAD
 /* Home Section */
+=======
+>>>>>>> fffe47455b4541925cc560024ddceda819481da5
 html,
 body {
   background-color: #E0E7F8;
@@ -16,6 +19,7 @@ body {
 }
 
 .container{
+<<<<<<< HEAD
   position: fixed;
   width: 360px;
   height: 46px;
@@ -134,3 +138,8 @@ section{
 
 
 
+=======
+  background-color: #AAAAAA;
+}
+
+>>>>>>> fffe47455b4541925cc560024ddceda819481da5
